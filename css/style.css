@@ -11,6 +11,9 @@
 }
 
 /* __________ COMMON STYLES __________ */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 .container{
     width: 70%;
@@ -22,10 +25,22 @@
 
 
 /* __________ HEADER __________ */
-header{
-    background-color: #e579e6;
-    height: 100px;
-    margin: 1rem 0;
+header img.logo{
+    width: 150px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    padding-right: 2rem;
+
+    border-right: 2px rgba(206, 206, 206, 0.568) solid;
+}
+
+header nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: grey;
+    font-size: .9rem;
+
+    margin-right: .5rem;
 }
 /* __________  END HEADER __________ */
 
@@ -33,7 +48,7 @@ header{
 
 /* __________ MAIN __________ */
 main section{
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 /* ---------- HERO SECTION ---------- */
