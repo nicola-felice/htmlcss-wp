@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* __________ COMMON STYLES __________ */
+
+.container{
+    width: 70%;
+    max-width: 1200px;
+    margin: auto;
+}
+/* __________ END COMMON STYLES __________ */
+
+
+
+/* __________ HEADER __________ */
+header{
+    background-color: #e579e6;
+    height: 100px;
+    margin: 1rem 0;
+}
+/* __________  END HEADER __________ */
+
+
+
+/* __________ MAIN __________ */
+main section{
+    margin: 1rem 0;
+}
+
+/* ---------- HERO SECTION ---------- */
+main section.hero{
+    height: 500px;
+    background-color: #e1d67a;
+}
+/* ---------- END HERO SECTION ---------- */
+
+
+/* ---------- LEADERSHIP SECTION ---------- */
+main .leadership_section{
+    background-color: blue;
+}
+
+/* section title */
+.leadership_section .leadership_title{
+    background-color: #abcfe7;
+}
+
+main .leadership_section .leadership_title{
+    height: 100px;
+}
+/* layout colums content */
+.leadership_section .row{
+    padding: 1rem 0;
+}
+
+main .leadership_section .col_left,
+main .leadership_section .col_right,
+main .leadership_section .col_center{
+    float: left;
+    height: 500px;
+    width: 25%;
+    background-color: #abcfe7;
+}
+
+main .leadership_section .col_center{
+    width: calc(50% - 2rem);
+    margin: 0 1rem;
+}
+/* ---------- END LEADERSHIP SECTION ---------- */
+
+
+/* __________ END MAIN __________ */
+
+
+
+/* __________ FOOTER __________ */
+footer{
+    background-color: violet;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+/* __________ END FOOTER __________ */
