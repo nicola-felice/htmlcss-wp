@@ -15,6 +15,14 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+h2{
+    font-size: 1.75rem;
+}
+
+p{
+    color: grey;
+}
+
 .container{
     width: 70%;
     max-width: 1200px;
@@ -29,6 +37,16 @@ body{
     bottom: 0;
 
     background-color: rgba(0, 0, 0, 0.15);
+}
+
+.image{
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
 }
 /* __________ END COMMON STYLES __________ */
 
@@ -80,25 +98,44 @@ section.hero .text_container{
     width: 50%;
     color: white;
 }
+
+section.hero .text_container p{
+    color: white;
+}
+
+section.hero .text_container h1{
+    font-weight: 600;
+}
 /* ---------- END HERO SECTION ---------- */
 
 
 /* ---------- LEADERSHIP SECTION ---------- */
-main .leadership_section{
-    background-color: blue;
-}
 
 /* section title */
 .leadership_section .leadership_title{
-    background-color: #abcfe7;
+    padding: 30px 0;
+    background-color: white;
 }
 
-main .leadership_section .leadership_title{
-    height: 100px;
-}
 /* layout colums content */
 .leadership_section .row{
     padding: 1rem 0;
+}
+
+.leadership_section .row h4{
+    padding: 10px 0;
+}
+
+.leadership_section .col_left .image{
+    background-image: url("../img/img-1.jpg");
+}
+
+.leadership_section .col_center .image{
+    background-image: url("../img/banner-2.jpg");
+}
+
+.leadership_section .col_right .image{
+    background-image: url("../img/img-3.jpg");
 }
 
 main .leadership_section .col_left,
@@ -107,7 +144,6 @@ main .leadership_section .col_center{
     float: left;
     height: 500px;
     width: 25%;
-    background-color: #abcfe7;
 }
 
 main .leadership_section .col_center{
