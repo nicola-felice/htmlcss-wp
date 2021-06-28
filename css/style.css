@@ -20,6 +20,16 @@ body{
     max-width: 1200px;
     margin: auto;
 }
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.15);
+}
 /* __________ END COMMON STYLES __________ */
 
 
@@ -53,8 +63,22 @@ main section{
 
 /* ---------- HERO SECTION ---------- */
 main section.hero{
-    height: 500px;
-    background-color: #e1d67a;
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section.hero .text_container{
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    width: 50%;
+    color: white;
 }
 /* ---------- END HERO SECTION ---------- */
 
