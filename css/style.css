@@ -16,11 +16,11 @@ body{
 }
 
 h2{
-    font-size: 1.75rem;
+    font-size: 1.9rem;
 }
 
 p{
-    color: grey;
+    color: rgb(148, 148, 148);
 }
 
 .container{
@@ -65,7 +65,7 @@ header img.logo{
 header nav a{
     text-decoration: none;
     text-transform: uppercase;
-    color: grey;
+    color:  rgb(148, 148, 148);
     font-size: .9rem;
 
     margin-right: .5rem;
@@ -76,7 +76,7 @@ header nav a{
 
 /* __________ MAIN __________ */
 main section{
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 /* ---------- HERO SECTION ---------- */
@@ -85,6 +85,7 @@ main section.hero{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    margin-top: 2.5rem;
 
     background-image: url("../img/banner.jpg");
     background-size: cover;
@@ -113,7 +114,8 @@ section.hero .text_container h1{
 
 /* section title */
 .leadership_section .leadership_title{
-    padding: 30px 0;
+    padding: 2rem 0;
+    padding-bottom: 2rem;
     background-color: white;
 }
 
@@ -123,7 +125,8 @@ section.hero .text_container h1{
 }
 
 .leadership_section .row h4{
-    padding: 10px 0;
+    padding: 15px 0;
+    font-weight: 400;
 }
 
 .leadership_section .col_left .image{
@@ -142,7 +145,6 @@ main .leadership_section .col_left,
 main .leadership_section .col_right,
 main .leadership_section .col_center{
     float: left;
-    height: 500px;
     width: 25%;
 }
 
@@ -159,8 +161,15 @@ main .leadership_section .col_center{
 
 /* __________ FOOTER __________ */
 footer{
-    background-color: violet;
-    height: 80px;
     margin-bottom: 1rem;
+}
+
+footer .designed_by{
+    text-align: center;
+}
+
+footer .designed_by span{
+    color: red;
+    font-size: 1.5rem;
 }
 /* __________ END FOOTER __________ */
