@@ -10,17 +10,26 @@
     clear: both;
 }
 
+/* _____ COLORS _____ */
+:root{
+    --primary_color: #8f9bd9;
+    --paragraphs-nav: rgb(148, 148, 148);
+}
+/* _____ END COLORS _____ */
+
+
+
 /* __________ COMMON STYLES __________ */
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
 h2{
-    font-size: 1.9rem;
+    font-size: 1.75rem;
 }
 
 p{
-    color: rgb(148, 148, 148);
+    color: var(--paragraphs-nav);
 }
 
 .container{
@@ -58,6 +67,7 @@ header img.logo{
     padding-top: 15px;
     margin-bottom: 20px;
     padding-right: 2rem;
+    cursor: pointer;
 
     border-right: 2px rgba(206, 206, 206, 0.568) solid;
 }
@@ -65,10 +75,15 @@ header img.logo{
 header nav a{
     text-decoration: none;
     text-transform: uppercase;
-    color:  rgb(148, 148, 148);
+    color:  var(--paragraphs-nav);
     font-size: .9rem;
 
-    margin-right: .5rem;
+    margin-right: .75rem;
+}
+
+header nav a:hover{
+    color: var(--primary_color);
+    border-bottom: 2px var(--primary_color) solid;
 }
 /* __________  END HEADER __________ */
 
