@@ -28,6 +28,18 @@ h2{
     font-size: 1.75rem;
 }
 
+.overlay::before{
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
 p{
     color: var(--paragraphs-nav);
 }
@@ -36,16 +48,6 @@ p{
     width: 70%;
     max-width: 1200px;
     margin: auto;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-
-    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .image{
