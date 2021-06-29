@@ -28,6 +28,9 @@ h2{
     font-size: 1.75rem;
 }
 
+.overlay{
+    position: relative;
+}
 .overlay::before{
     content: '';
     display: block;
@@ -58,6 +61,17 @@ p{
 
     background-size: cover;
     background-position: center;
+}
+
+.image_cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.border_rad_10px{
+    overflow: hidden;
+    border-radius: 10px;
 }
 /* __________ END COMMON STYLES __________ */
 
@@ -99,14 +113,7 @@ main section{
 /* ---------- HERO SECTION ---------- */
 main section.hero{
     height: 65vh;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
     margin-top: 2.5rem;
-
-    background-image: url("../img/banner.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 section.hero .text_container{
@@ -141,26 +148,18 @@ section.hero .text_container h1{
     padding: 1rem 0;
 }
 
+.leadership_section .row img{
+    height: 220px;
+}
+
 .leadership_section .row h4{
     padding: 15px 0;
     font-weight: 400;
 }
 
-.leadership_section .col_left .image{
-    background-image: url("../img/img-1.jpg");
-}
-
-.leadership_section .col_center .image{
-    background-image: url("../img/banner-2.jpg");
-}
-
-.leadership_section .col_right .image{
-    background-image: url("../img/img-3.jpg");
-}
-
-main .leadership_section .col_left,
-main .leadership_section .col_right,
-main .leadership_section .col_center{
+.leadership_section .col_left,
+.leadership_section .col_right,
+.leadership_section .col_center{
     float: left;
     width: 25%;
 }
